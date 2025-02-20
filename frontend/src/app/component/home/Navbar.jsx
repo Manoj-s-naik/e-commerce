@@ -2,10 +2,10 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="w-[10rem] h-[full] bg-red-600">
+    <div className="w-[10rem] h-screen">
       <nav>
-        <div>
-          <img src="/logo.png" alt="" className="rounded-full" />
+        <div className="w-full h-[7rem] flex justify-center items-center">
+          <img src="/logo.png" alt="" className="h-[6rem]"/>
         </div>
         <ul className="flex-col flex  gap-9">
           <div className="flex  items-center justify-center">
@@ -28,11 +28,6 @@ function Navbar() {
             {/* <li>Customer Service</li> */}
             <img src="/customer.jpg" alt="" className="w-[2rem]" />
           </div>
-
-          {/* <li>Best Sellers</li>
-          <li>Sale</li>
-          <li>Brands</li>
-          <li>Cart</li> */}
         </ul>
       </nav>
     </div>
