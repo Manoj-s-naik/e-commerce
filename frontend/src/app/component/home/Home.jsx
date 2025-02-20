@@ -12,7 +12,7 @@ function Home() {
           <Navbar />
         </div>
         <div>
-          <div className=" bg-red-100 h-[5.5rem] ">
+          <div className="h-[5.5rem] ">
             <Header />
           </div>
           <div className="">
