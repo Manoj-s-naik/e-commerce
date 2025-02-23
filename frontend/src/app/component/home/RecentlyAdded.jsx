@@ -2,7 +2,7 @@ import React from "react";
 
 function RecentlyAdded() {
   return (
-    <div className="w-[16rem] h-screen border shadow-2xl overflow-auto">
+    <div className="w-[16rem] h-screen border shadow-2xl overflow-auto ">
         <h1 className="text-center p-4">Recently Viewed</h1>
       <ul className="flex-col flex gap-4 ">
         <li>
