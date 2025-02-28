@@ -30,7 +30,7 @@ const viewProductHandler = async (req, res) => {
     return res.status(201).json({
       message: "product fetched successfully",
       success: "success",
-      products: products,
+      products,
     });
   } catch (err) {
     return res.status(500).json({
@@ -40,4 +40,4 @@ const viewProductHandler = async (req, res) => {
     });
   }
 };
-module.exports = {addProductHandler,viewProductHandler};
+module.exports = { addProductHandler, viewProductHandler };

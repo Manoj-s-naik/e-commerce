@@ -3,7 +3,7 @@ import Header from "@/app/component/home/Header";
 import Navbar from "@/app/component/home/Navbar";
 import RecentlyAdded from "@/app/component/home/RecentlyAdded";
 import Profile from "@/app/component/home/Profile";
-import ProductPage from "./ProductPage";
+import ProductPage from "../product/ProductPage";
 function Home() {
   return (
     <>
