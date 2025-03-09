@@ -6,15 +6,16 @@ async function ProductPage() {
   });
   const data = await response.json();
   const products = data.products;
-  console.log(products);
-
   return (
     <>
-      <div className="border shadow-lg rounded-lg p-6 gap-4 h-[calc(100vh-5.5rem)] overflow-auto w-full flex flex-wrap ">
+      <div
+        className="border shadow-lg rounded-lg p-6 gap-4 h-[calc(100vh-6.5rem)]
+ overflow-auto w-full flex flex-wrap "
+      >
         {products.map((product, index) => (
-          <div key={index} className="border rounded-xl shadow-2xl ">
+          <div key={index} className="border rounded-xl shadow-2xl m-4">
             <img
-              src="/headphone.webp"
+              src={product.images}
               alt={product.name}
               className="h-[15rem] w-[14rem] rounded-t-xl"
             />
@@ -22,9 +23,9 @@ async function ProductPage() {
               {product.name}
             </p>
             <div className="flex justify-center">
-              <button>{"$ "+product.price}</button>
+              <button>{"$ " + product.price}</button>
             </div>
-            <div className="flex gap- justify-evenly">
+            <div className="flex gap-4 justify-evenly">
               <button className="bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600">
                 Buy Now
               </button>

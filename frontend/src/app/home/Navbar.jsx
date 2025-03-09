@@ -2,12 +2,9 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="w-[10rem] h-screen">
+    <div className="w-[10rem] h-[634px]  ">
       <nav>
-        <div className="w-full h-[7rem] flex justify-center items-center">
-          <img src="/logo.png" alt="" className="h-[6rem]" />
-        </div>
-        <ul className="flex-col flex  gap-9 ">
+        <ul className="flex-col flex  gap-[3rem] pt-[2rem] ">
           <div className="flex  items-center justify-center relative group">
             <img src="/home.jpg" alt="" className="w-[2rem]" />
             <div className="absolute left-1/2 transform -translate-x-1/2 mt-2 bg-gray-800 text-white text-sm px-3 py-1 ml-[3rem] rounded opacity-0 group-hover:opacity-100 transition-opacity">

@@ -3,7 +3,7 @@ import React from "react";
 function Profile() {
   return (
     <>
-      <div className="w-[7rem] pt-8 flex justify-center items-center">
+      <div className="pr-7">
         <button>
           <img src="/profile.webp" alt="" className="rounded-full w-[3rem]" />
         </button>

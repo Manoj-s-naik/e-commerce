@@ -1,10 +1,10 @@
 import React from "react";
 import "./globals.css";
-import Home from "@/app/component/home/Home";
+import ProductPage from "./product/ProductPage";
 function page() {
   return (
     <>
-      <Home />
+      <ProductPage />
     </>
   );
 }
