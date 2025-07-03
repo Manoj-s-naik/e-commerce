@@ -23,36 +23,28 @@
 // }
 // app/layout.js
 import React from "react";
-import Header from "@/app/home/Header";
-import Navbar from "@/app/home/Navbar";
-import RecentlyAdded from "@/app/home/RecentlyAdded";
-
-export const metadata = {
-  title: "BUYMART",
-  description: "E commerce web application",
-  icons: {
-    icon: "/logo.png",
-  },
-};
+import { Providers } from "@/redux/Providers";
+import Header from "@/app/home/components/Header";
+import Navbar from "@/app/home/components/Navbar";
+import "./globals.css";
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body>
-        <div className="">
-          <div className="h-[6.5rem]">
-            <Header />
-          </div>
-          <div className="flex">
-            <Navbar />
-            <div>
+   
+      <html lang="en">
+        <body>
+        <Providers>
+          <div className="">
+            <div className="h-[6.5rem]">
+              <Header />
+            </div>
+            <div className="flex">
+              <Navbar />
               <div>{children}</div>
             </div>
-            <div>
-              <RecentlyAdded />
-            </div>
           </div>
-        </div>
-      </body>
-    </html>
+        </Providers>
+        </body>
+      </html>
+    
   );
 }

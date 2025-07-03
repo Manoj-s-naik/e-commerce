@@ -1,10 +1,12 @@
 import React from "react";
-import "./globals.css";
-import ProductPage from "./product/ProductPage";
+
+import ProductPage from "@/app/product/ProductPage";
 function page() {
+    console.log("manoj");
   return (
     <>
       <ProductPage />
+      
     </>
   );
 }
